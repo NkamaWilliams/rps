@@ -11,7 +11,7 @@
    height="59"
    version="1.1"
    id="svg4"
-   sodipodi:docname="icon-paper.svg"
+   sodipodi:docname="icon-paper2.svg"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
   <metadata
      id="metadata10">
@@ -21,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>

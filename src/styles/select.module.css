@@ -1,0 +1,84 @@
+.section{
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    aspect-ratio: 1;
+    background-image: url("/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: center center;
+    position: relative;
+}
+
+.wrapper{
+    border: 15px solid black;
+    background-color: white;
+    aspect-ratio: 1;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 10px 10px rgb(16, 16, 16);
+}
+
+.wrapper:hover{
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.wrapper:active{
+    box-shadow: 0 -5px 5px rgb(16, 16, 16);
+}
+
+.icon{
+    aspect-ratio: 1;
+    position: relative;
+    height: 60%;
+    margin: 10px;
+}
+
+.rock{
+    border-color: hsl(349, 71%, 52%);
+}
+
+.left{
+    left: 0;
+}
+
+.paper{
+    border-color: hsl(230, 89%, 62%);
+}
+
+.right{
+    right: 0;
+}
+
+.scissors{
+    border-color: hsl(39, 89%, 49%);
+}
+
+.bottom{
+    bottom: 10px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+@media (max-width: 450px){
+    .section{
+        padding: 10px;
+    }
+    .wrapper{
+        width: 120px;
+        border-width: 10px;
+    }
+
+    .left{
+        left: 10px;
+    }
+
+    .right{
+        right: 10px;
+    }
+}

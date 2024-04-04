@@ -5,14 +5,20 @@ import { use, useState } from "react";
 import Header from "../components/header";
 import Rules from "@/components/rules";
 import AppProvider from "../components/context"
+import { useAppContext } from "../components/context";
+import RuleButton from "@/components/ruleButton";
+import Board from "@/components/board";
 
 export default function Home() {
   const [score, setScore] = useState(0);
+  const context = useAppContext()
   return (
     <AppProvider>
-      <main>
+      <main className={styles.main}>
         <Header />
         <Rules/>
+        <Board/>
+        <RuleButton/>
       </main>
     </AppProvider>
     // <main className={styles.main}>

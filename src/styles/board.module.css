@@ -1,0 +1,65 @@
+.result{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+}
+
+.center{
+    position: relative;
+    margin: auto;
+}
+
+.fix, .fix:active{
+    box-shadow: none;
+}
+
+.winner, .winner:hover, .winner:active{
+    box-shadow: 0 0 100px 20px rgb(0, 157, 255);
+    z-index: -1;
+}
+
+.abs{
+    position: relative;
+    min-width: 200px;
+}
+
+.picked{
+    text-align: center;
+    margin: 15px auto;
+}
+
+.message_holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.message{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.restart{
+    display: block;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    border-radius: 8px;
+    border: 2px solid transparent;
+}
+
+.restart:hover{
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.restart:active{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}

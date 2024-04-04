@@ -1,0 +1,22 @@
+.button{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 5px;
+    border: 2px solid white;
+    border-radius: 8px;
+    z-index: 0;
+}
+
+.button:hover{
+    border-style: outset;
+    cursor: pointer;
+}
+
+.button:active{
+    border-style: inset;
+}

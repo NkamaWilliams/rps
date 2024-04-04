@@ -1,10 +1,12 @@
 'use client'
 import Image from "next/image"
-import styles from "./components.module.css"
+import styles from "../styles/components.module.css"
 import { useAppContext } from "./context"
 
 export default function Rules(){
-    const {rules, closeRules} = useAppContext()
+    const context = useAppContext()
+    const rules = context?.rules
+    const closeRules = context?.closeRules
     return(
         <>
         {rules && <div className={`${styles.rules}`}>

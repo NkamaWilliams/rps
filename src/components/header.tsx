@@ -1,8 +1,9 @@
-import styles from "./components.module.css"
+import styles from "../styles/components.module.css"
 import { useAppContext } from "./context"
 
 export default function Header() {
-    const {score} = useAppContext()
+    const context = useAppContext()
+    const score = context?.score
     return (
         <header className={`${styles.header}`}>
             <div className={`${styles.name}`}>
