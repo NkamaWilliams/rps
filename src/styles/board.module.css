@@ -2,6 +2,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     max-width: 800px;
     width: 100%;
     margin: auto;
@@ -62,4 +63,29 @@
     background-color: transparent;
     color: white;
     border: 2px solid white;
+}
+
+@media (max-width: 600px){
+    .result{
+        justify-content: space-evenly;
+    }
+    .message_holder{
+        order: 3;
+        margin: 15px auto;
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width:450px){
+
+    .abs{
+        width: 150px;
+        min-width: initial;
+    }
+    
+    .picked{
+        font-size: 18px;
+        text-wrap: wrap;
+    }
 }
